@@ -19,7 +19,7 @@ if (isDev) {
       branch: `main`,
       fetchOptions: ["--depth", 1],
       // Only import the docs folder from a codebase.
-      patterns: ["data/*-placeholder/1.json", "data/redirect-newstop/**"],
+      patterns: ["data/*-placeholder/1.json", "data/reddit-ask/**"],
     },
   });
 } else {
@@ -31,7 +31,7 @@ if (isDev) {
       branch: `main`,
       fetchOptions: ["--depth", 1],
       // Only import the docs folder from a codebase.
-      patterns: ["data/*-placeholder/1.json", "data/redirect-newstop/**"],
+      patterns: ["data/*-placeholder/1.json", "data/reddit-ask/**"],
     },
   });
 }
@@ -41,7 +41,7 @@ plugins = plugins.concat([
     options: {
       tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
       redditTypeName: ["RedditJson"],
-      issueTypeName: ["RedditTopIssuesJson"],
+      issueTypeName: ["AskIssuesJson"],
       localesPath: localesPath,
       disqus: {
         shortname: "buzzingcc",
@@ -78,7 +78,7 @@ plugins = plugins.concat([
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
       trackingIds: [
-        "G-KQ0RWMXYT4", // Google Analytics / GA
+        "G-H5507HLMBR", // Google Analytics / GA
       ],
     },
   },
