@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ask.buzzing.cc/sitemap.xml
+Host: https://ask.buzzing.cc
